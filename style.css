@@ -7,8 +7,8 @@ body
 .container
 {
     display: grid;
-    grid-template-rows: 1fr 6fr;
-    grid-template-columns: 1fr 6 fr;
+    grid-template-rows: 8fr 8fr 8fr 8fr;
+    grid-template-columns: 2fr 8fr;
     height: 100%;
     border: solid;
     height: 100%;
@@ -18,32 +18,68 @@ body
 
 .sidebar
 {
-    border: 6px solid pink;
-    grid-row: 1 / 4;
+    background-color: purple;
+    grid-row: 1 / 8;
     grid-column: 1 / 2;
 }
 
 .dashboard
 {
-    font-size: 10px;
+    font-size: 13px;
+    padding-left: 15px;
 }
 
+.sidebar svg
+{
+    fill: white;
+    font-weight: bold;
+}
 .label
 {
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-   
+    font-size: 25px;
+    padding-left: 20px;
 }
 
 .label#home
 {
-    
+    margin-top: 30px;
 }
 
+.label#setting
+{
+    margin-top: 30px;
+}
 .header 
 {
     grid-column: 2 / 6;
+    grid-row: 1 / 2;
     border: 6px solid yellow;
 }
 
+.search
+{
+    display: flex;
+    fill: black;
+    border: 6px solid red;
+    padding-left: 10px;
+}
+
+.search-icon
+{
+    border: 6px solid blue;
+    padding: 0;
+    margin: 0;
+}
+.searchbar
+{
+    position: absolute;
+    top: 20px;
+}
+
+.main-content
+{
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+
+    border: 6px solid green;
+}
