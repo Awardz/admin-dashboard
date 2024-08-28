@@ -18,7 +18,7 @@ body
 
 .sidebar
 {
-    background-color: purple;
+    background-color: #8b5cf6;
     grid-row: 1 / 8;
     grid-column: 1 / 2;
 }
@@ -33,6 +33,7 @@ body
 {
     fill: white;
     font-weight: bold;
+    width: fit-content;
 }
 .label
 {
@@ -64,18 +65,41 @@ body
     padding-left: 10px;
 }
 
-.search-icon
+
+
+svg.icon
 {
-    border: 6px solid blue;
-    padding: 0;
-    margin: 0;
+    width: 30px;
 }
 .searchbar
 {
-    position: absolute;
-    top: 20px;
+    margin-top: 10px;
+    width:  50%;
+    height: 20px;
+    border-radius: 10px;
 }
 
+svg#bell
+{
+    margin-left: 100px;
+}
+
+svg#profile-pic
+{
+    background-color: #8b5cf6;
+    fill: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.name
+{
+    margin-left: 50px;
+    font-weight: bold;
+}
 .main-content
 {
     grid-column: 2 / 6;
